@@ -11,3 +11,6 @@
 *.njsproj
 *.sln
 *.sw?
+/flint-to-eflint/.venv
+*.pyc
+/flint-to-eflint/service/.venv
