@@ -3,13 +3,13 @@
 
 export async function handler(event) {
   const baseUrl = process.env.PY_SERVICE_URL;
-  console.log("Base URL:",baseUrl);
+  // console.log("Base URL:",baseUrl);
 
-  console.log("Received event:", event);
+  // console.log("Received event:", event);
 
   const body = JSON.parse(event.body);
 
-  console.log(`${baseUrl.replace(/\/+$/, "")}/generate`);
+  // console.log(`${baseUrl.replace(/\/+$/, "")}/generate`);
 
   const resp = await fetch(`${baseUrl.replace(/\/+$/, "")}/generate`, {
     method: "POST",
